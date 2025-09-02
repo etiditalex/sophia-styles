@@ -39,7 +39,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: linear-gradient(135deg, rgba(139, 95, 191, 0.95), rgba(233, 30, 99, 0.95));
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: all 0.3s ease;
@@ -86,14 +86,15 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: var(--accent-color);
+    color: var(--light-color);
     font-weight: 500;
     transition: all 0.3s ease;
     position: relative;
 }
 
 .nav-link:hover {
-    color: var(--primary-color);
+    color: var(--light-color);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 .nav-link::after {
@@ -103,7 +104,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--primary-color);
+    background: var(--light-color);
     transition: width 0.3s ease;
 }
 
@@ -120,7 +121,7 @@ body {
 .bar {
     width: 25px;
     height: 3px;
-    background: var(--accent-color);
+    background: var(--light-color);
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -678,7 +679,7 @@ body {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: var(--light-color);
+        background: linear-gradient(135deg, rgba(139, 95, 191, 0.98), rgba(233, 30, 99, 0.98));
         width: 100%;
         text-align: center;
         transition: 0.3s;

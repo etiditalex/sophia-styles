@@ -59,9 +59,8 @@ body {
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 1rem;
     overflow: hidden;
-    max-width: 300px;
+    max-width: 100px;
 }
 
 .logo-image {
@@ -77,13 +76,6 @@ body {
 
 .logo-image:hover {
     transform: scale(1.05);
-}
-
-.nav-logo h2 {
-    color: var(--primary-color);
-    font-size: 1.8rem;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-menu {
@@ -670,19 +662,11 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .nav-logo {
-        gap: 0.5rem;
-    }
-    
     .logo-image {
         height: 40px;
         width: 40px;
         max-width: 40px;
         max-height: 40px;
-    }
-    
-    .nav-logo h2 {
-        font-size: 1.5rem;
     }
     
     .hamburger {
